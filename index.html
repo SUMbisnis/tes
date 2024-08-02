@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Asset/gambar-1.png" alt="" 
+                style="
+                height: 40px; 
+                border-radius: 4px; 
+                text-align: center; 
+                margin: 5px;
+                box-shadow: 1px 2x 1px rgb(203, 255, 207);">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="https://www.instagram.com/escau_hijau?igsh=ajVwMmhiZ3BlNTN6">Instagram</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="video-container" data-aos="zoom-out">
+        <video autoplay muted loop>
+            <source src="Asset/loby1.mp4" type="video/mp4">
+        </video>
+    </div>
+        <hr>
+
+
+    <div>
+        <section id="about">
+            <div class="container">
+                <h1 style="color: rgb(10, 141, 141);">About Us</h1>
+                <div class="about-content">
+                    <img src="Asset/gambar-1.png" alt="About Us">
+                    <div class="text">
+                        <h2 style="font-family: t;">
+                            <span style="color: rgb(199, 0, 0);">Es</span>
+                            <span style="color: rgb(206, 240, 17);">Cincau</span>  
+                            <span style="color: rgb(14, 105, 75);">Hijau</span>
+                            <b style="color: blue;"> Raflesia</b></h2>
+                      <p>Menjual es cincau hijau dengan berbagi jenis ukuran yang berlokasi di depan gor kota baru jambi
+                      </p>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <section id="gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-out">
+                        <img src="Asset/gambar-2.jpg" alt="Gambar-1">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-out">
+                        <img src="Asset/gambar-4.jpg" alt="gambar-2">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-out">
+                        <img src="Asset/gambar-3.jpg" alt="Gambar-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Es Cincau Hijau Raflesia. Semua hak cipta dilindungi.</p>
+                <p>Alamat: Kota Baru, Jambi, Indonesia</p>
+                <p>Instagram : @escau_hijau</p>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    
+    
+
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    
+</body>
+</html>
